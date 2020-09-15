@@ -9,7 +9,7 @@ class App extends React.Component {
     users: null,
   };
   fetchData = () => {
-    const API = "https://randomuser.me/api/";
+    const API = "https://randomuser.me/api/?results=7";
     fetch(API)
       .then((response) => response.json())
       .then((data) => {
