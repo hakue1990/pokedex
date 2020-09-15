@@ -12,11 +12,10 @@ class App extends React.Component {
     const API = "https://randomuser.me/api/";
     fetch(API)
       .then((response) => response.json())
-      .then((response) => {
-        console.log("asdasd");
-
+      .then((data) => {
+        console.log(data);
         this.setState({
-          users: response.results,
+          users: data.results,
         });
       });
   };
