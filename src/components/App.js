@@ -9,7 +9,7 @@ class App extends React.Component {
     users: null,
   };
   fetchData = () => {
-    const API = "https://randomuser.me/api/?results=7";
+    const API = "https://randomuser.me/api/?results=1";
     fetch(API)
       .then((response) => response.json())
       .then((data) => {
@@ -23,7 +23,7 @@ class App extends React.Component {
     const users = this.state.users;
     return (
       <div>
-        <h1>Pokedex</h1>
+        <h1>Users</h1>
         <Input />
         <FetchButton click={this.fetchData} />
         {users ? <UsersList users={this.state.users} /> : users}
