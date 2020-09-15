@@ -1,2 +1,0 @@
-(this.webpackJsonppokedex=this.webpackJsonppokedex||[]).push([[0],[,,,function(e,n,t){e.exports=t(10)},,,,,function(e,n,t){},function(e,n,t){},function(e,n,t){"use strict";t.r(n);var o=t(0),r=t.n(o),a=t(2),c=t.n(a);t(8),t(9);var l=function(){return r.a.createElement("div",null,r.a.createElement("h1",null,"Pokedex"))};c.a.render(r.a.createElement(r.a.StrictMode,null,r.a.createElement(l,null)),document.getElementById("root"))}],[[3,1,2]]]);
-//# sourceMappingURL=main.faa6b265.chunk.js.map
