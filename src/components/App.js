@@ -6,16 +6,17 @@ import UsersList from "./UsersList";
 
 class App extends React.Component {
   state = {
-    users: null,
+    users: [],
   };
   fetchData = () => {
-    const API = "https://randomuser.me/api/?results=1";
+    const API = "https://randomuser.me/api/?results=2";
     fetch(API)
       .then((response) => response.json())
       .then((data) => {
         console.log(data);
+        const user = data.results;
         this.setState({
-          users: data.results,
+          users: this.state.users.concat(user),
         });
       });
   };

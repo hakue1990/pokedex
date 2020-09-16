@@ -8,6 +8,10 @@ const UsersList = (props) => {
         <br />
         {user.name.title} {user.name.first}
         {user.name.last}
+        <br />
+        {user.gender}
+        <br />
+        <br />
       </h4>
     </div>
   ));
